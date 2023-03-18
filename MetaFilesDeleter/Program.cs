@@ -10,12 +10,12 @@ namespace MetaFilesDeleter
         static void Main(string[] args)
         {
             List<string> folders = new List<string>();
-            List<string> files = new List<string>();
 
             string metaFilesFormat = ".meta";
             string path = "";
             GetPath(ref path);
 
+            folders.Add(path);
             folders = Directory.GetDirectories(path, "*", SearchOption.AllDirectories).ToList();
 
             for (int i = 0; i < folders.Count; i++)

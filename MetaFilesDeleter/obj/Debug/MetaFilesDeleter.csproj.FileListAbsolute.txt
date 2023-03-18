@@ -1,0 +1,7 @@
+D:\Develop\С#\Work\MetaFilesDeleter\MetaFilesDeleter\bin\Debug\MetaFilesDeleter.exe.config
+D:\Develop\С#\Work\MetaFilesDeleter\MetaFilesDeleter\bin\Debug\MetaFilesDeleter.exe
+D:\Develop\С#\Work\MetaFilesDeleter\MetaFilesDeleter\bin\Debug\MetaFilesDeleter.pdb
+D:\Develop\С#\Work\MetaFilesDeleter\MetaFilesDeleter\obj\Debug\MetaFilesDeleter.csprojAssemblyReference.cache
+D:\Develop\С#\Work\MetaFilesDeleter\MetaFilesDeleter\obj\Debug\MetaFilesDeleter.csproj.CoreCompileInputs.cache
+D:\Develop\С#\Work\MetaFilesDeleter\MetaFilesDeleter\obj\Debug\MetaFilesDeleter.exe
+D:\Develop\С#\Work\MetaFilesDeleter\MetaFilesDeleter\obj\Debug\MetaFilesDeleter.pdb

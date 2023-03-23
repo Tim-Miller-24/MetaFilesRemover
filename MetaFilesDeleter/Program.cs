@@ -19,9 +19,9 @@ namespace MetaFilesDeleter
             folders = Directory.GetDirectories(path, "*", SearchOption.AllDirectories).ToList();
             folders.Add(path);
 
-            for (int i = 0; i < folders.Count; i++)
+            foreach (var folder in folders)
             {
-                foreach (var file in Directory.GetFiles(folders[i]))
+                foreach (var file in Directory.GetFiles(folder))
                 {
                     if (file.EndsWith(metaFilesFormat))
                     {

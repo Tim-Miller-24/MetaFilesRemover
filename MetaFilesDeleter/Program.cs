@@ -7,16 +7,17 @@ namespace MetaFilesDeleter
 {
     class Program
     {
-        static void Main(string[] args)
+        static void Main()
         {
-            List<string> folders = new List<string>();
+            List<string> folders;
 
             string metaFilesFormat = ".meta";
-            string path = "";
-            GetPath(ref path);
+            string path;
 
-            folders.Add(path);
+            path = GetPath();
+
             folders = Directory.GetDirectories(path, "*", SearchOption.AllDirectories).ToList();
+            folders.Add(path);
 
             for (int i = 0; i < folders.Count; i++)
             {
@@ -32,15 +33,17 @@ namespace MetaFilesDeleter
             Console.WriteLine("Мета файлы успешно удалены \n");
         }
 
-        static void GetPath(ref string path)
+        static string GetPath()
         {
-            Console.WriteLine("Введите путь до папки");
-            path = Console.ReadLine();
-            
-            if (!Directory.Exists(path))
+            string path;
+            do
             {
-                GetPath(ref path);
-            }
+                Console.WriteLine("Введите путь до папки");
+                path = Console.ReadLine();
+
+            } while (!Directory.Exists(path));
+
+            return path;
         }
     }
 }
